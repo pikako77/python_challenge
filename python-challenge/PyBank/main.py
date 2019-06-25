@@ -101,14 +101,14 @@ print("count_month : %i"% (count_month) )
 
 # calculate the net total Profit/losses
 NetProfit= calc_net_total(profit)
-print("NetProfit : %i"% (NetProfit))
+print("Total : $%i"% (NetProfit))
 
 # calcuate change month-by-month
 change = calc_change(profit)
 
 # calculate average change
 Average_NetProfit = average(change)
-print("Average_NetProfit : %8.2f"% (Average_NetProfit) )
+print("Average change :$%8.2f"% (Average_NetProfit) )
 
 # calculate max increase
 max_change_idx = get_max_change_index(change)
@@ -121,8 +121,8 @@ print(f"Greatest Decrease in Profits : {date[min_change_idx+1]} ($ {change[min_c
 # Output to file
 f =open(output_file ,"w+")
 f.write("count_month : %i \n"% (count_month) )
-f.write("NetProfit : %i\n"% (NetProfit))
-f.write("Average_NetProfit : %8.2f\n"% (Average_NetProfit) )
+f.write("Total : $%i\n"% (NetProfit))
+f.write("Average change : $%8.2f\n"% (Average_NetProfit) )
 f.write(f"Greatest Increase in Profits : {date[max_change_idx+1]} ($ {change[max_change_idx]})\n" )
 f.write(f"Greatest Decrease in Profits : {date[min_change_idx+1]} ($ {change[min_change_idx]})\n" )
 f.close()

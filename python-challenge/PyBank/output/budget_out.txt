@@ -1,0 +1,5 @@
+count_month : 86 
+NetProfit : 38382578
+Average_NetProfit : -2315.12
+Greatest Increase in Profits : Feb-2012 ($ 1926159.0)
+Greatest Decrease in Profits : Sep-2013 ($ -2196167.0)
